@@ -55,6 +55,26 @@ const startGame = async () =>{
  document.querySelector('#reset').addEventListener('click', startGame)
 startGame()
 
+const numberAvg = (things, ...numbers) =>{//concept of rest parameter we can use multiple parameters  and their subset without describing their limit
+ let sum = 0
+ numbers.forEach((num)=> sum += num)
+ const average =sum / numbers.length
+ return `${things} = ${average}`
+}
+console.log(numberAvg('marks',10,10,10))
 
+
+const printTeam =(name, coach, ...players) =>{
+console.log(`Team: ${name}`)
+console.log(`coach: ${coach}`)
+console.log(`players: ${players.join(', ')}`)
+}
+const team = {
+    name : "maaz",
+    coach : 'misbah',
+    players : ['aleem'  ,'kaleem', 'saleem', 'moinuddin']
+}
+printTeam(team.name, team.coach, ...team.players)//spraed
+console.log()
 
 console.log('some thing ') 

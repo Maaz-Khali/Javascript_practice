@@ -1,3 +1,0 @@
-const calculateAverage = (numOne, numTwo) =>{
-    
-}
