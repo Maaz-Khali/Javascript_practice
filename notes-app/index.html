@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes App</title>
+        <link rel="stylesheet" href="styles/styl.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">My web</h1>
+                <h2 class="header__subtitle">Notes App</h2>
+            </div>
+        </header>
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-text" type="text" class="input" placeholder="idhar likh">
+        <select id="filter-by" class="dropdown">
+            <option value="byCreated">Sort by last edited</option>
+            <option value="byEdited">Sort by recently created</option>
+            <option value="alphabetical">Sort alphabetically</option>
+        </select>
+            </div>
+        </div>
+        <div class="container">
+            <div id="notes">
+        
+            </div>
+            <button id="create-notes" class="button"> Create Notes</button> 
+        </div>
+         
+      <!--  <form id="name-form">
+            <input type="text" placeholder="First Name" name="firstName">
+            <button>Submit</button>
+        </form>-->
+       <!--     <label>
+            <input id="for-fun" type="checkbox">Check me for fun
+        </label>
+    -->
+    <script src="script/node-uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="script/notes-functions.js"></script>
+     <script src="script/notes-app.js"></script>
+
+    </body>
+</html>

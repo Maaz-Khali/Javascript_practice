@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>to-do App</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">
+                    To-do App
+                </h1>
+                <h2 class="header__subtitle">
+                    What do you need to do?
+                </h2>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-text" class="input" type="text" placeholder="filter todo">
+                <label class="checkbox">
+                    <input id="check-todo" type="checkbox"> todo
+                </label>
+            </div>
+        </div>
+     
+      <!--     <input id="enter-todo" type="text" placeholder="Enter your todos here">
+        <button id="add"> Enter Input </button> -->
+        <div class="container">
+            <div id="todos"> </div>
+        <form id="todo-form">
+            <input type="text"  class="input" placeholder="Task todo" name="todoTask">
+            <button class="button">Submit</button>
+        </form>
+        </div>
+       
+        
+    <script src="script/todo-uuidv4.js"></script>
+    <script src="script/todo-functions.js"></script>
+     <script src="script/todo-app.js"></script>
+    </body>
+</html>
